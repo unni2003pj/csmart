@@ -1,5 +1,6 @@
 $(document).ready(function(){  
 
+    // Banner section
     var sync1 = $("#sync1");
     var sync2 = $("#sync2");
     var slidesPerPage = 5; //globaly define number of elements per page
@@ -9,7 +10,7 @@ $(document).ready(function(){
         items: 1,
         slideSpeed: 2000,
         nav: true,
-        autoplay: true, 
+        autoplay: false, 
         dots: true,
         loop: true,
         responsiveRefreshRate: 200,
@@ -77,6 +78,28 @@ $(document).ready(function(){
         var number = $(this).index();
         sync1.data('owl.carousel').to(number, 300, true);
     });
+
+    // client slider
+
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        autoplay: true,
+        margin:32,
+        
+        nav:false,
+        autoWidth:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
 
 
 // Sticky
