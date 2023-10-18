@@ -1,6 +1,7 @@
 $(document).ready(function(){  
 
     // Banner section
+    
     var sync1 = $("#sync1");
     var sync2 = $("#sync2");
     var slidesPerPage = 5; //globaly define number of elements per page
@@ -81,25 +82,44 @@ $(document).ready(function(){
 
     // client slider
 
-    $('.owl-carousel').owlCarousel({
-        loop:true,
+    $('.client-section').slick({
         autoplay: true,
-        margin:32,
-        
-        nav:false,
-        autoWidth:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:3
-            },
-            1000:{
-                items:5
-            }
-        }
-    })
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: false,
+        variableWidth: true,
+        prevArrow: false,
+        nextArrow: false
+      });
+
+    // vertical slider
+
+    // $('.vertical-section').owlCarousel({
+    //     items: 3,
+    //     loop: false,
+    //     mouseDrag: true,
+    //     touchDrag: true,
+    //     pullDrag: true,
+    //     rewind: true,
+    //     autoplay: false,
+    //     margin: 0,
+    //     nav: true
+    // })
+    
+    $('.vertical-section').slick({
+        autoplay: true,
+        dots: false,
+        vertical: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        verticalSwiping: true,
+        prevArrow: false,
+        nextArrow: false
+      });
+    
 
 
 // Sticky
@@ -111,6 +131,15 @@ $(window).scroll(function () {
       $('#back-to-top').fadeOut();
       $('.header-block').removeClass('sticky');
     }
+});
+
+// URL
+
+$('.menu-listing li a').on('click', function(event) {
+    event.preventDefault();
+    var hash = this.hash;
+    console.log(hash)
+    $('html, body').animate({scrollTop: $(hash).offset().top}, 700);
 });
   
 
