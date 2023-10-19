@@ -106,9 +106,22 @@ $(document).ready(function(){
         verticalSwiping: true,
         prevArrow: false,
         nextArrow: false
-      });
+    });
     
+    // Testimonial slider
 
+    $('.testimonial-section').slick({
+        autoplay: true,
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: false,
+        prevArrow: false,
+        nextArrow: false,
+        centerPadding:'80px',
+    });
 
     // Sticky
 
