@@ -56,6 +56,9 @@ body {
 .m-70 {
     margin: 70px 0;
 }
+.mb-0 {
+    margin-bottom: 0 !important;
+}
 .gutter-20 {
     --bs-gutter-x: 1.3rem;
     --bs-gutter-y: 1.3rem;
@@ -540,3 +543,114 @@ body {
     top: -33%;
     right: 25%;
 }
+.boiler-card h5{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 10px;
+}
+.boiler-card p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.service-bg {
+    background: #515151;
+}
+.service-bg .section-header h3 {
+    color: var(--white);
+}
+.service-bg .section-content p {
+    color: var(--white);
+}
+.each-service-card {
+    width: 100%;
+    padding: 32px 0;
+    border: 1px solid transparent;
+    border-bottom: 1px solid rgb(108 179 185 / 20%);
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: .3s ease-out;
+}
+.each-service-card:hover {
+    padding: 32px;
+    border-radius: 32px;
+    background: linear-gradient(72deg, rgba(24, 164, 255, 0.10) 22.16%, rgba(5, 195, 127, 0.10) 76.47%);
+    border: 1px solid var(--theme-blue);
+}
+.service-card-left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 166px;
+}
+.service-card-left figure {
+    width: 64px;
+    height: 64px;
+    margin-right: 32px;
+}
+.service-card-left figure img {
+    object-fit: contain;
+}
+.service-card-left h5 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    color: var(--white);
+}
+.service-card-center {
+    width: 312px;
+    height: 312px;
+    flex-shrink: 0;
+    opacity: 0;
+    position: absolute;
+    left: calc(50% - 172px);
+    top: calc(50% - 166px);
+    transition: .3s ease-out;
+}
+.each-service-card:hover .service-card-center {
+    opacity: 1;
+}
+.service-card-right {
+    width: 100%;
+    display: flex;
+    padding-left: 166px;
+    padding-right: 48px;
+    position: relative;
+}
+.service-card-right p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--white);
+    max-width: 80%;
+    opacity: 0;
+}
+.each-service-card:hover .service-card-right p {
+    
+    opacity: 1;
+}
+.arrow {
+    width: 48px;
+    height: 48px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 24px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease-out;
+}
+.arrow::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url('../images/svg/arrow-white.svg') no-repeat;
+    display: inline-block;
+}
+/* .each-service-card:hover .arrow {
+    right: 32px;
+} */
