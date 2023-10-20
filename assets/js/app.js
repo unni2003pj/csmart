@@ -141,7 +141,17 @@ $(document).ready(function(){
         $('html, body').animate({scrollTop: $(this.hash).offset().top - 50}, 1000);
         return false;
     });
-    
+
+    // ISOTOP FILTER
+
+    $('.grid').isotope({
+        itemSelector: '.grid-item',
+    });
+
+    $('.gallery-filter-control li').click(function () {
+        var filterValue = $(this).attr('data-filter');
+        console.log(filterValue)
+    });
 
     // Back to top  
     $('#back-to-top').click(function () {
