@@ -11,7 +11,7 @@ $(document).ready(function(){
         items: 1,
         slideSpeed: 2000,
         nav: true,
-        autoplay: false, 
+        autoplay: true, 
         dots: true,
         loop: true,
         responsiveRefreshRate: 200,
@@ -142,16 +142,21 @@ $(document).ready(function(){
         return false;
     });
 
-    // ISOTOP FILTER
+    // $('.gallery-filter-control li').click(function () {
+    //     var filterValue = $(this).attr('data-filter');
+    //     console.log(filterValue)
+    // });
 
-    $('.grid').isotope({
-        itemSelector: '.grid-item',
-    });
-
-    $('.gallery-filter-control li').click(function () {
-        var filterValue = $(this).attr('data-filter');
-        console.log(filterValue)
-    });
+    var $btns = $('.gallery-filter').click(function() {
+        if (this.id == 'all') {
+          $('.gallery-grid .each-grid-container').fadeIn(450);
+        } else {
+          var $el = $('.' + this.id).fadeIn(450);
+          $('.gallery-grid .each-grid-container').not($el).hide();
+        }
+        $btns.removeClass('active');
+        $(this).addClass('active');
+    }) 
 
     // Back to top  
     $('#back-to-top').click(function () {
@@ -163,3 +168,5 @@ $(document).ready(function(){
 
 
 })
+
+

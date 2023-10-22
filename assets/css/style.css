@@ -59,6 +59,10 @@ body {
 .mb-0 {
     margin-bottom: 0 !important;
 }
+.gutter-30 {
+    --bs-gutter-x: 1.875rem;
+    --bs-gutter-y: 1.875rem;
+}
 .gutter-20 {
     --bs-gutter-x: 1.3rem;
     --bs-gutter-y: 1.3rem;
@@ -169,7 +173,7 @@ body {
     width: 100%;
     height: 100vh;
     background: linear-gradient(72deg, rgba(24, 164, 255, 0.25) 22.16%, rgba(5, 195, 127, 0.25) 76.47%), #000;
-    padding-top: 150px;
+    /* padding-top: 150px; */
 }
 .carousel-text-content {
     max-width: 65%;
@@ -631,6 +635,7 @@ body {
     color: var(--white);
     max-width: 80%;
     opacity: 0;
+    transition: .3s ease-out;
 }
 .each-service-card:hover .service-card-right p {
     
@@ -786,9 +791,7 @@ body {
     background: linear-gradient(72deg, #18A4FF 22.16%, #05C37F 76.47%);
 }
 .gallery-grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 29px;
+    width: 100%;
     margin-top: 60px;
 }
 .each-grid-item {
@@ -832,4 +835,12 @@ body {
 }
 .each-grid-item:hover .arrow {
     transform: rotate(0deg);
+}
+.footer-block {
+    width: 100%;
+    padding: 112px 0;
+}
+.footer-bg {
+    background: url('../images/footer-bg.jpg') no-repeat;
+    background-size: cover;
 }
