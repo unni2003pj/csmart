@@ -224,6 +224,13 @@ body {
 .carousel-action .action-btn:hover:after {
     transform: translateX(7px);
 }
+.globe {
+    width: 800px;
+    height: 719px;
+    background: url('../images/svg/globe.svg') no-repeat;
+    position: absolute;
+    right: 0;
+}
 .banner-area .owl-carousel .owl-stage-outer {
     overflow: unset;
 }

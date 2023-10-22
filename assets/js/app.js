@@ -80,6 +80,15 @@ $(document).ready(function(){
         sync1.data('owl.carousel').to(number, 300, true);
     });
 
+    // Banner Animation
+
+    // var o = $(".carousel-inner-block");
+    // $(".carousel-text-content").on("mousemove", function (t) {
+    //     var e = -($(window).innerWidth() / 2 - t.pageX) / 30,
+    //         n = ($(window).innerHeight() / 2 - t.pageY) / 10;
+    //     o.attr("style", "transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-webkit-transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-moz-transform: rotateY(" + e + "deg) rotateX(" + n + "deg)")
+    // })
+
     // client slider
 
     $('.client-section').slick({
