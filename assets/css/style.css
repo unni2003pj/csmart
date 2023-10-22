@@ -40,7 +40,9 @@ body {
 .align-right {
     float: right;
 }
-
+.green-text {
+    color: var(--theme-green);
+}
 .max-80 {
     max-width: 80%;
 }
@@ -150,8 +152,8 @@ body {
 }
 .action-btn:hover {
     color: var(--white) !important;
-    background-position: right center;
-    background-size: 200% auto;
+    /* background-position: right center;
+    background-size: 200% auto; */
 }
 .sticky .action-btn {
     color: var(--white) !important;
@@ -839,8 +841,51 @@ body {
 .footer-block {
     width: 100%;
     padding: 112px 0;
+    overflow: hidden;
 }
 .footer-bg {
-    background: url('../images/footer-bg.jpg') no-repeat;
-    background-size: cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('../images/footer-bg.jpg'), lightgray 50% / cover no-repeat;
+    position: relative;
+}
+.footer-bg .bubble-box {
+    z-index: 0;
+}
+.each-footer-section {
+    position: relative;
+    z-index: 1;
+}
+.footer-section-header {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.footer-section-header figure img {
+    width: 250px;
+}
+.footer-section-header h5 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.footer-links li {
+    display: block;
+    width: 100%;
+}
+.footer-links li a  {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    color: var(--white) !important;
+}
+.copyright-block {
+    width: 100%;
+    margin-top: 40px;
+    padding: 40px 0;
+    border-top: 1px solid rgba(108, 178, 185, 0.20);
+}
+.copyright-block p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--white);
 }

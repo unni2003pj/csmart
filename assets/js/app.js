@@ -88,8 +88,8 @@ $(document).ready(function(){
         infinite: true,
         speed: 300,
         slidesToShow: 3,
+        centerMode: true,
         slidesToScroll: 1,
-        centerMode: false,
         variableWidth: true,
         prevArrow: false,
         nextArrow: false
