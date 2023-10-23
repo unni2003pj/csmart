@@ -224,6 +224,112 @@ body {
 .carousel-action .action-btn:hover:after {
     transform: translateX(7px);
 }
+
+
+
+.animation-wrapper {
+    width: 100%;
+    height: calc(100% - 110px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 110px;
+    padding-bottom: 100px;
+}
+.animation-wrapper .container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.circle-sm-left {
+    float: left;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    left: -82px;
+    top: 53px;
+}
+.triangle-sm-left {
+    float: left;
+    width: 27px;
+    height: 23px;
+    position: absolute;
+    left: 57px;
+    top: 91px;
+}
+.triangle-lg-left {
+    float: left;
+    width: 58px;
+    height: 49px;
+    position: absolute;
+    left: 104px;
+    top: 45px;
+}
+.circle-lg-center {
+    float: left;
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    left: 319px;
+    top: 46px;
+}
+.circle-sm-center {
+    float: left;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    left: 392px;
+    top: 27px;
+}
+.lines {
+    float: left;
+    width: 158px;
+    height: 128px;
+    position: absolute;
+    right: -17%;
+    top: 41px;
+}
+.triangle-bordered {
+    float: left;
+    position: absolute;
+    left: 209px;
+    bottom: 109px;
+}
+.triangle-bordered object {
+    float: left;
+    width: 23px;
+    height: 27px;
+    margin-right: 13px;
+}
+.circle-sm-right {
+    float: left;
+    width: 39px;
+    height: 38px;
+    position: absolute;
+    right: -11%;
+    bottom: 124px;
+}
+.circle-sm-right object{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+.circle-lg-right {
+    float: left;
+    width: 77px;
+    height: 77px;
+    position: absolute;
+    right: -17%;
+    bottom: 59px;
+}
+.circle-lg-right object{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+
+
 .globe {
     width: 800px;
     height: 719px;
