@@ -156,6 +156,8 @@ $(document).ready(function(){
     //     console.log(filterValue)
     // });
 
+    AOS.init();
+
     var $btns = $('.gallery-filter').click(function() {
         if (this.id == 'all') {
           $('.gallery-grid .each-grid-container').fadeIn(450);
