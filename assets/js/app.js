@@ -156,7 +156,12 @@ $(document).ready(function(){
     //     console.log(filterValue)
     // });
 
-    AOS.init();
+    AOS.init({
+        disable: function() {
+            var maxWidth = 800;
+            return window.innerWidth < maxWidth;
+        }
+    });
 
     var $btns = $('.gallery-filter').click(function() {
         if (this.id == 'all') {

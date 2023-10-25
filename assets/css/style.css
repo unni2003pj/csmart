@@ -148,12 +148,12 @@ body {
     display: inline-flex;
     align-items: center;
     box-shadow: 0px 4px 8px 0px rgba(0, 15, 115, 0.08);
-    transition: .3s cubic-bezier(.3, 0, 0, 1.3);
+    transition: .3s ease-out;
 }
 .action-btn:hover {
     color: var(--white) !important;
-    /* background-position: right center;
-    background-size: 200% auto; */
+    background-size: 10rem auto;
+    background-position: right center;
 }
 .sticky .action-btn {
     color: var(--white) !important;
@@ -225,9 +225,6 @@ body {
 .carousel-action .action-btn:hover:after {
     transform: translateX(7px);
 }
-
-
-
 .animation-wrapper {
     width: 100%;
     height: 100%;
@@ -236,23 +233,17 @@ body {
     top: 0;
     padding-top: 150px;
     padding-bottom: 100px;
-    /* -webkit-animation: slide-down 5s infinite ease-in-out;
-    animation: slide-down 5s infinite ease-in-out;
-    -webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s; */
 }
-/* @keyframes slide-down {
+@keyframes animate {
     0% {
-      transform: translateY(0rem);
-    }
-    50% {
-      transform: translateY(4rem);
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
     }
     100% {
-      transform: translateY(0rem);
-      opacity:1;
+        transform: scale(1.3) translateY(-90px) rotate(360);
+        opacity: 0;
     }
-  } */
+}
 .animation-wrapper .container {
     width: 100%;
     height: 100%;
@@ -265,6 +256,7 @@ body {
     position: absolute;
     left: -82px;
     top: 53px;
+    animation: animate 3s linear infinite;
 }
 .triangle-sm-left {
     float: left;
@@ -273,6 +265,9 @@ body {
     position: absolute;
     left: 57px;
     top: 91px;
+    transform: translatey(0px);
+    -webkit-animation: float 6s ease-in-out infinite;
+    animation: float 4s ease-in-out infinite;
 }
 .triangle-lg-left {
     float: left;
@@ -281,6 +276,9 @@ body {
     position: absolute;
     left: 104px;
     top: 45px;
+    transform: translatey(0px);
+    -webkit-animation: float 6s ease-in-out infinite;
+    animation: float 6s ease-in-out infinite;
 }
 .circle-lg-center {
     float: left;
@@ -289,6 +287,21 @@ body {
     position: absolute;
     left: 319px;
     top: 46px;
+    animation: animate 6s linear infinite;
+}
+@keyframes float {
+	0% {
+		
+		transform: translatey(0px);
+	}
+	50% {
+		
+		transform: translatey(-10px);
+	}
+	100% {
+		
+		transform: translatey(0px);
+	}
 }
 .circle-sm-center {
     float: left;
@@ -297,6 +310,7 @@ body {
     position: absolute;
     left: 392px;
     top: 27px;
+    animation: animate 5s linear infinite;
 }
 .lines {
     float: left;
@@ -318,6 +332,29 @@ body {
     height: 27px;
     margin-right: 13px;
 }
+.triangle-bordered object:nth-child(1) {
+    animation-name: slideMove;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+.triangle-bordered object:nth-child(2) {
+    animation-name: slideMove;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+.triangle-bordered object:nth-child(3) {
+    animation-name: slideMove;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+@keyframes slideMove{
+    50%{
+        transform: translateX(13px);
+    }
+}
 .circle-sm-right {
     float: left;
     width: 39px;
@@ -325,11 +362,13 @@ body {
     position: absolute;
     right: -11%;
     bottom: 124px;
+    animation: animate 2.5s linear infinite;
 }
 .circle-sm-right object{
     float: left;
     width: 100%;
     height: 100%;
+    animation: animate 5s linear infinite;
 }
 .circle-lg-right {
     float: left;
@@ -338,15 +377,13 @@ body {
     position: absolute;
     right: -17%;
     bottom: 59px;
+    animation: animate 8s linear infinite;
 }
 .circle-lg-right object{
     float: left;
     width: 100%;
     height: 100%;
 }
-
-
-
 .globe {
     width: 800px;
     height: 719px;
@@ -360,8 +397,9 @@ body {
 .carousel-card {
     width: 100%;
     height: 240px;   
+    --borderWidth: 2px;
+    border-radius: 36px;
     background: var(--white);
-    border: 2px solid var(--white);
     border-radius: 36px;
     padding: 36px; 
     display: flex;
@@ -369,7 +407,22 @@ body {
     justify-content: center;
     align-items: center;
     box-shadow: 0px 23.98129px 79.13824px 1.19906px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+.carousel-card:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(72deg, var(--theme-blue) 22.16%, var(--theme-green) 76.47%);
+    border-radius: 36px;
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
     transition: .3s ease-out;
+    opacity: 0;
 }
 .carousel-card figure {
     width: 72px;
@@ -478,8 +531,19 @@ body {
 .carousel-card-section .owl-stage .owl-item {
     cursor: pointer;
 }
-.carousel-card-section .owl-stage .owl-item.active.current .carousel-card {
-    border-color: var(--theme-blue) !important;
+.carousel-card-section .owl-stage .owl-item.active.current .carousel-card:after {
+    opacity: 1;
+}
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 /*------ Banner CSS End ------*/
@@ -557,13 +621,27 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid var(--white);
+    --borderWidth: 2px;
     box-shadow: 5px 5px 20px 1.19906px rgba(0, 0, 0, 0.15);
-    transition: .3s cubic-bezier(.3, 0, 0, 1.3);
+    position: relative;
 }
-.product-card:hover {
-    border-color: var(--theme-blue);
-    /* transform: scale(1.1); */
+.product-card:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(72deg, var(--theme-blue) 22.16%, var(--theme-green) 76.47%);
+    border-radius: 16px;
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+    transition: .3s ease-out;
+    opacity: 0;
+}
+.product-card:hover:after {
+    opacity: 1;
 }
 .product-card figure {
     width: 60px;
@@ -668,16 +746,105 @@ body {
 .fill-layer {
     position: relative;
 }
+.layer-1 {
+    float: right;
+}
 .layer-2 {
+    width: 100%;
     position: absolute;
-    top: -47px;
-    right: 50px;
+    top: 5px;
+    left: 0px;
     z-index: -1;
+    padding-top: 47px;
 }
 .layer-3 {
     position: absolute;
-    top: -33%;
+    top: -155px;
     right: 25%;
+}
+.cirlce-wrap {
+    width: 516px;
+    height: 516px;
+    position: relative;
+    -webkit-animation:spin 50s linear infinite;
+    -moz-animation:spin 50s linear infinite;
+    animation:spin 50s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+.outer-circle-wrap {
+    width: 516px;
+    height: 516px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.outer-circle-wrap img.left-top {
+    position: absolute;
+    left: 0;
+    top: -6px;
+}
+.inner-circle-wrap {
+    width: 516px;
+    height: 516px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.outer-circle-wrap img.right-bottom {
+    position: absolute;
+    right: 6px;
+    bottom: 5px;
+    transform: rotate(15deg);
+}
+.animation-sm-wrapper .circle-sm-left{
+    left : 0;
+    top: 0;
+}
+.animation-sm-wrapper .triangle-sm-left{
+    left : 41px;
+    top: 63px;
+}
+.animation-sm-wrapper .triangle-lg-left{
+    left : 88px;
+    top: 17px;
+}
+.animation-sm-wrapper .circle-sm-right{
+    right : 29px;
+    top: 11px;
+}
+.animation-sm-wrapper .circle-lg-right{
+    width: 54px;
+    height: 54px;
+    right : 75px;
+    top: 30px;
+}
+.animation-sm-wrapper .triangle-bordered {
+    left: auto;
+    right: 85px;
+    bottom:0;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1)
+}
+.animation-sm-wrapper .circle-sm-left-bottom {
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    left: 75px;
+    bottom: 10px;
+    animation: animate 2s linear infinite;
 }
 .boiler-card h5{
     font-size: 40px;
@@ -770,7 +937,6 @@ body {
     transition: .3s ease-out;
 }
 .each-service-card:hover .service-card-right p {
-    
     opacity: 1;
 }
 .arrow {
