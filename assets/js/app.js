@@ -7,6 +7,11 @@ $(document).ready(function(){
     var slidesPerPage = 5; //globaly define number of elements per page
     var syncedSecondary = true;
 
+    
+        if ($(document).width() < 767) {
+            var slidesPerPage = 1;
+        }
+    
     sync1.owlCarousel({
         items: 1,
         slideSpeed: 2000,
@@ -101,7 +106,30 @@ $(document).ready(function(){
         slidesToScroll: 1,
         variableWidth: true,
         prevArrow: false,
-        nextArrow: false
+        nextArrow: false,
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
+            },
+          ],
     });
     
     // Vertical slider
@@ -114,7 +142,8 @@ $(document).ready(function(){
         slidesToScroll: 1,
         verticalSwiping: true,
         prevArrow: false,
-        nextArrow: false
+        nextArrow: false,
+        
     });
     
     // Testimonial slider
@@ -130,6 +159,25 @@ $(document).ready(function(){
         prevArrow: false,
         nextArrow: false,
         centerPadding:'80px',
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        
     });
 
     // Sticky
