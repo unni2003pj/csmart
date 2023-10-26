@@ -1274,11 +1274,11 @@ body {
 
     /*------ Header CSS End ------*/
 
-    .wrapper {
+    /* .wrapper {
         position: fixed;
         left: 0;
         top: 0;
-    }
+    } */
     .no-scroll {
         overflow: hidden;
     }
