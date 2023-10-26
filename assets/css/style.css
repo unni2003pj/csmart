@@ -1269,19 +1269,7 @@ body {
 
 }
 
-@media(max-width: 1024px) {
-
-    .outer-circle-wrap img.left-top {
-        width: 52%;
-        height: 52%;
-        object-fit: contain;
-        left: 65px;
-        top: 8px;
-    }
-   
-}
-
-@media(max-width: 991px) { 
+@media(max-width: 1024px) { 
 
     /*------ Header CSS End ------*/
 
@@ -1328,9 +1316,7 @@ body {
     .on .line:nth-child(3) {
         transform: rotate(-47deg) translate(7px,-7px);
         background: var(--white);
-    }
-    
-
+    }  
     .header-block, .header-inner {
         height: 80px;
     }
@@ -1419,9 +1405,6 @@ body {
     .circle-lg-right {
         right: 20px;
     }
-    .globe {
-        opacity: 0.3;
-    }
     .banner-area .owl-carousel .owl-stage-outer {
         overflow: hidden;
         padding: 10px 0;
@@ -1455,7 +1438,7 @@ body {
         top: 0;
     }
     .carousel-text-content {
-        max-width: 100%;
+        max-width: 49%;
     }    
     .carousel-text-content h5 {
         font-size: 16px;
@@ -1503,7 +1486,7 @@ body {
     }
     .fill-layer {
         width: 100%;
-        height: 100%;
+        height: 442px;
         margin-bottom: 20px;
     }
     .layer-1, .layer-1 img {
@@ -1580,10 +1563,10 @@ body {
     .boiler-card p {
         font-size: 16px;
     }    
-    .section-button-block {
+    /* .section-button-block {
         justify-content: flex-start !important;
         margin-top: 15px;
-    }
+    } */
     .m-70 {
         margin: 40px 0;
     }
@@ -1630,6 +1613,7 @@ body {
     }
     .service-card-right p {
         opacity: 1;
+        max-width: 100%;
     }    
     .gallery-filter-control {
         flex-wrap: wrap;
@@ -1659,7 +1643,7 @@ body {
     }
     .copyright-block {
         margin-top: 20px;
-        padding: 30px 0;
+        padding: 30px 15px;
     }    
     .copyright-block p {
         font-size: 16px;
@@ -1670,7 +1654,24 @@ body {
 
 }
 
+@media (max-width: 991px) {
+    
+    .fill-layer {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
 @media(max-width: 767px) {
+    
+    .carousel-text-content {
+        max-width: 100%;
+    }   
+    .globe {
+        opacity: 0.3;
+    }
     
 }
 

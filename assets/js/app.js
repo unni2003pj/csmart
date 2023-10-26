@@ -20,7 +20,7 @@ $(document).ready(function(){
     
     if ($(document).width() < 767) {
         var slidesPerPage = 1;
-    } else if  ($(document).width() < 1024) {
+    } else if  ($(document).width() <= 1024) {
         var slidesPerPage = 2;
     }
 
