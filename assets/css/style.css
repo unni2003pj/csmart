@@ -28,6 +28,9 @@ body {
     -moz-osx-font-smoothing: grayscale !important; 
     overflow-x: hidden;
 }
+.wrapper {
+    overflow-x: hidden;
+}
 .theme-gradient {
     background: var(--theme-gradient);
     background-clip: text;
@@ -1267,6 +1270,14 @@ body {
 }
 
 @media(max-width: 1024px) {
+
+    .outer-circle-wrap img.left-top {
+        width: 52%;
+        height: 52%;
+        object-fit: contain;
+        left: 65px;
+        top: 8px;
+    }
    
 }
 
@@ -1473,6 +1484,9 @@ body {
 
     /*------ Main Content CSS ------*/
 
+    .section-figure {
+        width: 100%;
+    }
     .section-figure img {
         width: 100%;
         object-fit: contain;
@@ -1508,22 +1522,22 @@ body {
         height: 100%;
     }
     .inner-circle-wrap img {
-        width: 80%;
+        width: 90%;
         height: 100%;
     }
     .outer-circle-wrap img.left-top {
-        width: 50%;
-        height: 51%;
+        width: 64%;
+        height: 43%;
         object-fit: contain;
-        left: 37px;
-        top: 7px;
+        left: 0;
+        top: 0;
     }
     .outer-circle-wrap img.right-bottom {
-        width: 49%;
-        height: 54%;
+        width: 26%;
+        height: 69%;
         object-fit: contain;
-        right: -15px;
-        bottom: 41px;
+        right: 0;
+        bottom: 0;
     }
     .layer-3 {
         top: 0;
@@ -1587,6 +1601,14 @@ body {
     }
     .service-card-right {
         padding: 0;
+        justify-content: center;
+    }
+    .service-card-right  p {
+        text-align: center;
+        justify-content: center;
+    }
+    .service-card-right .arrow {
+        display: none;
     }
     .service-card-center {
         display: block;

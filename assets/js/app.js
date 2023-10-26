@@ -18,10 +18,12 @@ $(document).ready(function(){
     var syncedSecondary = true;
 
     
-        if ($(document).width() < 767) {
-            var slidesPerPage = 1;
-        }
-    
+    if ($(document).width() < 767) {
+        var slidesPerPage = 1;
+    } else if  ($(document).width() < 1024) {
+        var slidesPerPage = 2;
+    }
+
     sync1.owlCarousel({
         items: 1,
         slideSpeed: 2000,
@@ -164,10 +166,8 @@ $(document).ready(function(){
             {
               breakpoint: 1024,
               settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: true
+                slidesToShow: 2,
+                slidesToScroll: 1
               }
             },
             {
