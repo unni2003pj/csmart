@@ -216,7 +216,7 @@ body {
     display: none;
 }
 .menu-panel .ti-close {
-    color: var(--text-color);
+    color: var(--white);
     font-size: 25px;
     position: absolute;
     right: 34px;
@@ -1272,6 +1272,7 @@ body {
 
 @media(max-width: 991px) { 
 
+    /*------ Header CSS End ------*/
 
     .hamburger-menu {
         display: block;
@@ -1309,27 +1310,7 @@ body {
         transform: rotate(-47deg) translate(7px,-7px);
         background: var(--white);
     }
-    .menu-panel {
-        float: left;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        left: -100%;
-        top: 0;
-        background: var(--white);
-        padding: 85px 30px;
-        -webkit-transition: all 300ms ease;
-        -moz-transition: all 300ms ease;
-        -ms-transition: all 300ms ease;
-        -o-transition: all 300ms ease;
-        transition: all 300ms ease;
-        z-index: 10;
-    }
-    .menu-panel.active {
-        left: 0;
-    }
-
-
+    
 
     .header-block, .header-inner {
         height: 80px;
@@ -1342,14 +1323,55 @@ body {
     .brand-logo object {
         width: 100%;
     }
+    .menu-panel {
+        float: left;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        background: linear-gradient(72deg, rgba(24, 164, 255, 0.25) 22.16%, rgba(5, 195, 127, 0.25) 76.47%), #000;
+        padding: 85px 30px;
+        -webkit-transition: all 300ms ease;
+        -moz-transition: all 300ms ease;
+        -ms-transition: all 300ms ease;
+        -o-transition: all 300ms ease;
+        transition: all 300ms ease;
+        z-index: 10;
+    }
+    .menu-panel.active {
+        left: 0;
+    }
+    .menu-panel .ti-close {
+        display: block;
+    }
+    .menu-listing li {
+        width: 100%;
+        padding: 0;
+    }    
+    .menu-listing li a {
+        font-size: 30px;
+        line-height: 60px;
+        font-weight: 100;
+        color: var(--white) !important;
+    }    
+    .menu-listing li .action-btn {
+        font-size: 27px;
+        height: 60px;
+        margin-top: 12px;
+    }
+
+    /*------ Header CSS End ------*/
+
+    /*------ Banner CSS ------*/
+
     .animation-wrapper {
         padding-top: 80px;
     }
     .circle-sm-left {
         left: 20px;
         top: 27px;
-    }
-    
+    }    
     .triangle-sm-left {
         top: 50px;
         left: 70px;
@@ -1357,7 +1379,7 @@ body {
     .triangle-lg-left {
         left: 110px;
     }
-    span.lines {
+    .lines {
         right: 15px;
         width: 80px;
         height: auto;
@@ -1365,28 +1387,22 @@ body {
     .circle-sm-center, .circle-lg-center,
     .circle-sm-right, .circle-lg-right {
         display: none;
-    }
-    
-    span.lines object {
+    }    
+    .lines object {
         width: 100%;
-    }
-    
-    span.triangle-bordered {
+    }    
+    .triangle-bordered {
         left: 20px;
-    }
-    
-    span.circle-sm-right {
+    }    
+    .circle-sm-right {
         right: 50px;
-    }
-    
-    span.circle-lg-right {
+    }    
+    .circle-lg-right {
         right: 20px;
     }
     .globe {
         opacity: 0.3;
     }
-
-
     .banner-area .owl-carousel .owl-stage-outer {
         overflow: hidden;
         padding: 10px 0;
@@ -1419,42 +1435,35 @@ body {
         transform: translate(0, 0);
         top: 0;
     }
-
-
-
-
     .carousel-text-content {
         max-width: 100%;
-    }
-    
+    }    
     .carousel-text-content h5 {
         font-size: 16px;
         line-height: normal;
         margin-bottom: 10px;
-    }
-    
+    }    
     .carousel-text-content h1 {
         font-size: 30px;
         line-height: 40px;
         margin-bottom: 10px;
-    }
-    
+    }    
     .carousel-text-content p {
         font-size: 16px;
-    }
-    
+    }    
     .carousel-action {
         margin-top: 20px;
-    }
-    
+    }    
     .action-btn {
         font-size: 16px;
     }
-
     .carousel-card {
         box-shadow: none;
     }
 
+    /*------ Banner CSS End ------*/
+
+    /*------ Main Content CSS ------*/
 
     .section-figure img {
         width: 100%;
@@ -1470,13 +1479,11 @@ body {
     .section-content.max-80 {
         max-width: 100%;
     }
-
     .fill-layer {
         width: 100%;
         height: 100%;
         margin-bottom: 20px;
     }
-
     .layer-1, .layer-1 img {
         width: 100%;
     }
@@ -1521,12 +1528,6 @@ body {
     .vertical-section {
         margin-top: 30px;
     }
-
-
-
-
-
-
     .content-area {
         padding: 40px 0;
     }
@@ -1553,12 +1554,10 @@ body {
     .boiler-card h5 {
         font-size: 30px;
         line-height: 40px;
-    }
-    
+    }    
     .boiler-card p {
         font-size: 16px;
-    }
-    
+    }    
     .section-button-block {
         justify-content: flex-start !important;
         margin-top: 15px;
@@ -1566,8 +1565,6 @@ body {
     .m-70 {
         margin: 40px 0;
     }
-
-
     .each-service-card {
         padding: 32px;
         border-radius: 32px;
@@ -1576,8 +1573,7 @@ body {
         flex-direction: column;
         float: left;
         margin-bottom: 25px;
-    }
-    
+    }    
     .service-card-left {
         padding: 0;
     }
@@ -1604,21 +1600,21 @@ body {
     }
     .service-card-right p {
         opacity: 1;
-    }
-
-
+    }    
     .gallery-filter-control {
         flex-wrap: wrap;
-    }
-    
+    }    
     .gallery-filter {
         margin: 5px;
-    }
-    
+    }    
     .gallery-grid {
         margin-top: 30px;
-    }
+    }   
     
+    /*------ Main Content CSS End ------*/
+
+    /*------ Footer CSS ------*/
+
     .footer-block {
         padding: 40px 0;
     }
@@ -1631,24 +1627,16 @@ body {
     .footer-links li a {
         line-height: normal;
     }
-
-
     .copyright-block {
         margin-top: 20px;
         padding: 30px 0;
-    }
-    
+    }    
     .copyright-block p {
         font-size: 16px;
         line-height: 29px;
     }
     
-    
-    
-    
-    
-    
-    
+    /*------ Footer CSS End ------*/
 
 }
 

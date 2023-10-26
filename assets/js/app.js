@@ -1,5 +1,15 @@
 $(document).ready(function(){  
 
+    $(".hamburger-menu").click(function(){
+      $(this).closest('body').toggleClass('no-scroll');
+      $(this).closest('.header-inner').find(".menu-panel").toggleClass('active');    
+    });
+
+    $(".ti-close").click(function(){
+      $(this).closest('body').toggleClass('no-scroll');
+      $(this).closest('.header-inner').find(".menu-panel").toggleClass('active');    
+    });
+
     // Banner section
     
     var sync1 = $("#sync1");
@@ -187,6 +197,8 @@ $(document).ready(function(){
 
     $('.menu-listing li a').on('click', function() {  
         $('html, body').animate({scrollTop: $(this.hash).offset().top - 50}, 1000);
+        $('.ti-close').closest('body').toggleClass('no-scroll');
+        $('.ti-close').closest('.header-inner').find(".menu-panel").toggleClass('active');
         return false;
     });
 
