@@ -379,7 +379,7 @@ body {
     float: left;
     position: absolute;
     left: 209px;
-    bottom: 109px;
+    bottom: 45px;
 }
 .triangle-bordered object {
     float: left;
@@ -440,10 +440,12 @@ body {
     height: 100%;
 }
 .globe {
-    width: 800px;
-    height: 719px;
-    background: url('../images/svg/globe.svg') no-repeat;
+    width: 530px;
+    height: 477px;
+    background: url(../images/svg/globe.svg) no-repeat;
+    background-size: contain;
     position: absolute;
+    top: calc(50% - 242px);
     right: 0;
 }
 .banner-area .owl-carousel .owl-stage-outer {

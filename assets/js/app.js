@@ -16,7 +16,7 @@ $(document).ready(function(){
         items: 1,
         slideSpeed: 2000,
         nav: true,
-        autoplay: false, 
+        autoplay: true, 
         dots: true,
         loop: true,
         responsiveRefreshRate: 200,
@@ -84,15 +84,6 @@ $(document).ready(function(){
         var number = $(this).index();
         sync1.data('owl.carousel').to(number, 300, true);
     });
-
-    // Banner Animation
-
-    // var o = $(".banner-area");
-    // $(".animation-wrapper span").on("mousemove", function (t) {
-    //     var e = -($(window).innerWidth() / 2 - t.pageX) / 30,
-    //         n = ($(window).innerHeight() / 2 - t.pageY) / 10;
-    //     o.attr("style", "transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-webkit-transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-moz-transform: rotateY(" + e + "deg) rotateX(" + n + "deg)")
-    // })
 
     // client slider
 
@@ -198,11 +189,6 @@ $(document).ready(function(){
         $('html, body').animate({scrollTop: $(this.hash).offset().top - 50}, 1000);
         return false;
     });
-
-    // $('.gallery-filter-control li').click(function () {
-    //     var filterValue = $(this).attr('data-filter');
-    //     console.log(filterValue)
-    // });
 
     AOS.init({
         disable: function() {
