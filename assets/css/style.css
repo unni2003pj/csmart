@@ -1352,11 +1352,19 @@ body {
     
     .triangle-sm-left {
         top: 50px;
+        left: 70px;
     }
-    
+    .triangle-lg-left {
+        left: 110px;
+    }
     span.lines {
-        right: 0;
+        right: 15px;
         width: 80px;
+        height: auto;
+    }
+    .circle-sm-center, .circle-lg-center,
+    .circle-sm-right, .circle-lg-right {
+        display: none;
     }
     
     span.lines object {
@@ -1374,11 +1382,14 @@ body {
     span.circle-lg-right {
         right: 20px;
     }
-
+    .globe {
+        opacity: 0.3;
+    }
 
 
     .banner-area .owl-carousel .owl-stage-outer {
         overflow: hidden;
+        padding: 10px 0;
     }
     .main-hero-section .owl-prev,
     .main-hero-section .owl-next {
@@ -1390,7 +1401,11 @@ body {
         left: auto;
         right: 0;
         top: auto;
-        bottom: 120px;
+        bottom: 190px;
+        zoom: .7;
+    }
+    .main-hero-section .owl-nav button span {
+        opacity: 1;
     }
     .main-hero-section .owl-prev {
         right: 100px;
@@ -1434,6 +1449,10 @@ body {
     
     .action-btn {
         font-size: 16px;
+    }
+
+    .carousel-card {
+        box-shadow: none;
     }
 
 
