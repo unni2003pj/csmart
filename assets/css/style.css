@@ -1274,6 +1274,14 @@ body {
 
     /*------ Header CSS End ------*/
 
+    .wrapper {
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+    .no-scroll {
+        overflow: hidden;
+    }
     .hamburger-menu {
         display: block;
         float: left;
