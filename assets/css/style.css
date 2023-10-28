@@ -726,9 +726,15 @@ body {
     display: flex !important;
     align-items: center;
     padding: 0 16px;
+    transition: .3s ease-out;
+    cursor: pointer;
 }
 .each-client img {
     object-fit: contain;
+    filter: grayscale(100%);
+}
+.each-client:hover img {
+    filter: grayscale(0);
 }
 .section-header h5 {
     font-size: 20px;
@@ -1289,6 +1295,12 @@ body {
     font-weight: 700;
     line-height: 32px;
 }
+.each-grid-item:hover .gallery-item-content h5 {
+    background: var(--theme-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .gallery-item-content p {
     width: 100%;
     font-size: 16px;
@@ -1300,8 +1312,13 @@ body {
 .each-grid-item .arrow {
     top: auto;
     bottom: 0;
-    background: linear-gradient(72deg, #18A4FF 22.16%, #05C37F 76.47%);
+    background: linear-gradient(72deg, #18A4FF 22.16%, #05C37F 76.47%);;
     transform: rotate(-45deg);
+    transition: .3s ease-out;
+    filter: grayscale(100%);
+}
+.each-grid-item:hover .arrow {
+    filter: grayscale(0);
 }
 .each-grid-item:hover .arrow {
     transform: rotate(0deg);
@@ -1397,6 +1414,63 @@ body {
 
 @media(max-width: 1280px) {
 
+    .menu-listing li {
+        padding: 0 10px;
+    }    
+    .banner-area {
+        height: calc(100vh + 140px);
+    }    
+    .header-block {
+        height: 100px;
+    }    
+    .header-inner {
+        height: 100px;
+    }    
+    .brand-logo object {
+        width: 65%;
+    }    
+    .carousel-text-content h1 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 15px;
+    }    
+    .carousel-text-content {
+        max-width: 41%;
+    }
+    .slick-prev {
+        left: 15px;
+    }
+    .slick-next {
+        right: 15px;
+    }
+    .lines {
+        right: -45px;
+        width: 100px;
+    }
+    .lines object {
+        width: 100%;
+    }
+    .triangle-bordered {
+        bottom: 30px
+    }
+    .circle-sm-center, .circle-lg-center {
+        top: 0;
+    }
+    .circle-sm-left {
+        left: 0;
+    }
+    .triangle-sm-left {
+        top: 20px;
+    }
+    .triangle-lg-left {
+        top: 20px;
+    }
+    .carousel-card h5 {
+        font-size: 22px;
+    }
+    .carousel-card p {
+        font-size: 14px;
+    }
 }
 
 @media(max-width: 1199px) {
@@ -1539,6 +1613,9 @@ body {
     .circle-lg-right {
         right: 20px;
     }
+    .banner-area {
+        height: calc(100vh - 140px);
+    }  
     .banner-area .owl-carousel .owl-stage-outer {
         overflow: hidden;
         padding: 10px 0;
@@ -1595,6 +1672,34 @@ body {
     }
     .carousel-card {
         box-shadow: none;
+    }
+    .slick-arrow {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: auto;
+        bottom: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+    }
+    .slick-arrow:before {
+        zoom: .8;
+    }
+    .slick-arrow:after {
+        width: 60px;
+        height: 60px;
+        transform: translate(0, 0);
+        left: 0;
+        top: 0;
+    }
+    .slick-next {
+        right: 15px;
+    }
+    .slick-prev {
+        left: auto;
+        right: 85px;
     }
 
     /*------ Banner CSS End ------*/
