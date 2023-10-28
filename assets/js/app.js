@@ -1,8 +1,12 @@
+// Loader
+
 $('body').append('<div class="loader"><img src="assets/images/svg/csmart-logo-footer.svg"/></div>');
+
 $(window).on('load', function(){
   $('body').addClass('no-scroll');
   setTimeout(removeLoader, 2000);
 });
+
 function removeLoader(){
   $('body').removeClass('no-scroll');
     $( ".loader" ).fadeOut(500, function() {      
@@ -26,14 +30,18 @@ $(document).ready(function(){
 
     // Animation 3D
 
-    let preserve = document.querySelector('.banner-area');
+    if($(document).width() > 1280){
 
-    preserve.onmousemove = function(e) {
-      let x = -(e.pageX - preserve.offsetLeft) * 0.05;
-      let y = -(e.pageY - preserve.offsetTop) * 0.05;
-      
-      preserve.style.setProperty('--x', x+'px');
-      preserve.style.setProperty('--y', y+'px');
+      let preserve = document.querySelector('.banner-area');
+
+      preserve.onmousemove = function(e) {
+        let x = -(e.pageX - preserve.offsetLeft) * 0.05;
+        let y = -(e.pageY - preserve.offsetTop) * 0.05;
+        
+        preserve.style.setProperty('--x', x+'px');
+        preserve.style.setProperty('--y', y+'px');
+      }
+
     }
 
     // Banner section
@@ -228,12 +236,16 @@ $(document).ready(function(){
         return false;
     });
 
+    // AOS
+
     AOS.init({
         disable: function() {
             var maxWidth = 800;
             return window.innerWidth < maxWidth;
         }
     });
+
+    // Gallery filter
 
     var $btns = $('.gallery-filter').click(function() {
         if (this.id == 'all') {
@@ -247,6 +259,7 @@ $(document).ready(function(){
     }) 
 
     // Back to top  
+
     $('#back-to-top').click(function () {
     $('body,html, .wrapper').animate({
         scrollTop: 0
