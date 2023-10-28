@@ -1820,12 +1820,14 @@ body {
     .boiler-card p {
         font-size: 16px;
     }    
-    /* .section-button-block {
-        justify-content: flex-start !important;
-        margin-top: 15px;
-    } */
     .m-70 {
         margin: 40px 0;
+    }
+    .testimonial-bg {
+        
+        background-attachment:unset;
+        animation: none;
+        
     }
     .each-service-card {
         padding: 32px;
@@ -1888,6 +1890,10 @@ body {
 
     .footer-block {
         padding: 40px 0;
+    }
+    .footer-bg {
+        background-attachment:unset;
+        animation: none;
     }
     .footer-section-header {
         margin-bottom: 0;
