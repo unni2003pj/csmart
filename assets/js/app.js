@@ -1,6 +1,6 @@
 // Loader
 
-$('body').append('<div class="loader"><img src="assets/images/svg/csmart-logo-footer.svg"/></div>');
+$('body').append('<div class="loader"><img src="assets/images/svg/csmart-logo.svg"/></div>');
 
 $(window).on('load', function(){
   $('body').addClass('no-scroll');
