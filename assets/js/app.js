@@ -1,4 +1,18 @@
+$('body').append('<div class="loader"><img src="assets/images/svg/csmart-logo-footer.svg"/></div>');
+$(window).on('load', function(){
+  $('body').addClass('no-scroll');
+  setTimeout(removeLoader, 2000);
+});
+function removeLoader(){
+  $('body').removeClass('no-scroll');
+    $( ".loader" ).fadeOut(500, function() {      
+      $( ".loader" ).remove();
+  });  
+}
+
 $(document).ready(function(){  
+
+    // Mobile Menu
 
     $(".hamburger-menu").click(function(){
       $(this).closest('body').toggleClass('no-scroll');
