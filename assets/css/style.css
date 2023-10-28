@@ -1505,6 +1505,9 @@ body {
 
     /*------ Banner CSS ------*/
 
+    .banner-area {
+        background-attachment: unset;
+    }
     .animation-wrapper {
         padding-top: 80px;
     }
