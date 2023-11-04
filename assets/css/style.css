@@ -29,7 +29,21 @@ body {
     -moz-osx-font-smoothing: grayscale !important; 
     overflow-x: hidden;
 }
-
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: var(--theme-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+    transition: .3s ease-out;
+}
 .theme-gradient {
     background: var(--theme-gradient);
     background-clip: text;
@@ -245,8 +259,6 @@ body {
     height: 100%;
     position: relative;
 }
-
-
 .overlay-item {
     display: flex;
     position: absolute;
@@ -454,24 +466,6 @@ body {
 .carousel-action .action-btn:hover:after {
     transform: translateX(7px);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .slick-arrow {
     float: left;
     width: auto;
@@ -525,9 +519,6 @@ body {
     top: 50%;
     transform: translate(calc(50% - -45px) , -50%);
 }
-
-
-
 .carousel-card-block {
     width: 100%;
     position: absolute;
@@ -1338,6 +1329,8 @@ body {
 
 /*------ Footer CSS End ------*/
 
+/*------ Media Queries CSS ------*/
+
 
 @media(max-width: 1280px) {
 
@@ -1365,8 +1358,7 @@ body {
     }
     .menu-listing li a {
         font-size: 14px;
-    }
-    
+    }    
 
     /*------ Header CSS End ------*/
 
@@ -1411,7 +1403,6 @@ body {
         right: -40px;
         width: 85px;
     }
-
     .carousel-card-block .item {
         margin: 2px 10px;
     }    
@@ -1603,8 +1594,7 @@ body {
 
     /*------ Banner CSS End ------*/
 
-
-
+    /*------ Main Content CSS  ------*/
 
     .article-container {
         padding: 160px 0 50px 0;
@@ -1655,8 +1645,6 @@ body {
         right: 0;
         bottom: 0;
     }
-
-
     .fill-layer {
         margin: 47px 0;
     }  
@@ -1807,35 +1795,30 @@ body {
         margin: 6px;
     }
 
+    /*------ Main Content CSS End ------*/
+
 }
 
 @media(max-width: 767px) { 
 
-    /*------ Header CSS End ------*/
-
-    
-
-    /*------ Header CSS End ------*/
-
-    
+    /*------ Banner CSS ------*/
 
     .carousel-text-content h1, 
     .carousel-text-content p {
         max-width: 100%;
     }
+
+    /*------ Banner CSS End ------*/
     
-
-
-
-
-
-    
+    /*------ Main Content CSS ------*/    
     
     .each-testimonial-block {
         padding: 0;
-    }
-    
+    } 
 
+    /*------ Main Content CSS End ------*/
+
+    /*------ Footer CSS ------*/
 
     .footer-block {
         padding: 50px 0;
@@ -1851,11 +1834,20 @@ body {
         font-size: 16px;
     }
 
+    /*------ Footer CSS End ------*/
+
 }
 
 @media (max-width: 400px) {
 
+    /*------ Banner CSS ------*/
+
     .banner-block {
         height: 100vh;
     }
+
+    /*------ Banner CSS End ------*/
+
 }
+
+/*------ Media Queries CSS End ------*/

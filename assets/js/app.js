@@ -1,3 +1,19 @@
+// Loader
+
+$('body').append('<div class="loader"><img src="assets/images/svg/csmart-logo.svg"/></div>');
+
+$(window).on('load', function(){
+  $('body').addClass('no-scroll');
+  setTimeout(removeLoader, 2000);
+});
+
+function removeLoader(){
+  $('body').removeClass('no-scroll');
+    $( ".loader" ).fadeOut(500, function() {      
+      $( ".loader" ).remove();
+  });  
+}
+
 $(document).ready(function(){  
 
     // Sticky
