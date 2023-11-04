@@ -55,6 +55,7 @@
 </head>
 
 <body>
+    
     <div class="wrapper">
 
         <!-- Header -->
@@ -63,44 +64,53 @@
             <div class="container">
                 <div class="row">
                     <div class="header-inner">
+
+                        <!-- Brand logo -->
+
                         <a href="./" aria-label="brand logo" class="brand-logo">
-                            <object data="assets/images/svg/csmart-logo.svg" title="csmart-logo" class="non-sticky-logo"></object>
-                            <object data="assets/images/svg/csmart-logo-black.svg" title="csmart-logo" class="sticky-logo"></object>
+                            <img src="assets/images/svg/csmart-logo.svg" title="csmart-logo" class="non-sticky-logo"/>
+                            <img src="assets/images/svg/csmart-logo-black.svg" title="csmart-logo" class="sticky-logo"/>
                         </a>
+
+                        <!-- Mobile Menu -->
+
                         <a class="hamburger-menu" href="javascript:void(0);">
                             <span class="line"></span>
                             <span class="line"></span>
                             <span class="line"></span>
-                        </a>                        
+                        </a>
+
+                        <!-- Menu Listing -->
+
                         <div class="menu-panel">
                             <a href="javascript:void(0);" class="ti-close">
                                 <img src="assets/images/svg/close.svg"/>
                             </a>
                             <ul class="menu-listing">
                                 <li>
-                                    <a aria-label="products" href="#product">Products</a>
+                                    <a class="nav-link" aria-label="products" href="#product">Products</a>
                                 </li>
                                 <li>
-                                    <a aria-label="solutions" href="#solution">Business Solutions</a>
+                                    <a class="nav-link" aria-label="solutions" href="#solution">Business Solutions</a>
                                 </li>
                                 <li>
-                                    <a aria-label="services" href="#services">Services</a>
+                                    <a class="nav-link" aria-label="services" href="#services">Services</a>
                                 </li>
                                 <li>
-                                    <a aria-label="resources" href="#product">Resources</a>
+                                    <a class="nav-link" aria-label="resources" href="#product">Resources</a>
                                 </li>
                                 <li>
-                                    <a aria-label="downloads" href="#gallery">Downloads</a>
+                                    <a class="nav-link" aria-label="downloads" href="#gallery">Downloads</a>
                                 </li>
                                 <li>
-                                    <a aria-label="pricing" href="#">Pricing</a>
+                                    <a class="nav-link" aria-label="pricing" href="#">Pricing</a>
                                 </li>
                                 <li>
                                     <a aria-label="pricing" href="#" class="action-btn">Free Demo</a>
                                 </li>
                             </ul>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -108,47 +118,61 @@
 
         <!-- Banner section -->
 
-        <section class="banner-area" style="--x: 0px; --y: 0px">
+        <section class="banner-block" style="--x: 0px; --y: 0px">
+            <div class="container">
 
-            <div class="animation-wrapper">
-                <div class="container">
-                    <span class="overlay-item circle-sm-left">
-                        <object data="assets/images/svg/banner-circle-sm.svg"></object>
-                    </span>
-                    <span class="overlay-item  triangle-sm-left">
-                        <object data="assets/images/svg/banner-triangle-sm.svg"></object>
-                    </span>
-                    <span class="overlay-item  triangle-lg-left">
-                        <object data="assets/images/svg/banner-triangle-lg.svg"></object>
-                    </span>
-                    <span class="overlay-item circle-sm-center">
-                        <object data="assets/images/svg/banner-circle-sm.svg"></object>
-                    </span>
-                    <span class="overlay-item circle-lg-center">
-                        <object data="assets/images/svg/banner-circle-lg.svg"></object>
-                    </span>
+                <!-- Animation Elements -->
+
+                <div class="animation-wrapper">
+                    <div class="overlay-item left-top circle-sm-left">
+                        <img src="assets/images/svg/banner-circle-sm.svg"/>
+                    </div>
+                    <div class="overlay-item left-top triangle-sm-left">
+                        <img src="assets/images/svg/banner-triangle-sm.svg"/>
+                    </div>
+                    <div class="overlay-item left-top triangle-lg-left">
+                        <img src="assets/images/svg/banner-triangle-lg.svg"/>
+                    </div>
                     
-                    <span class="overlay-item  lines">
-                        <object data="assets/images/svg/corner-art.svg"></object>
-                    </span>
-                    <span class="overlay-item  triangle-bordered">
-                        <object data="assets/images/svg/triangle-right-bordered.svg"></object>
-                        <object data="assets/images/svg/triangle-right-bordered.svg"></object>
-                        <object data="assets/images/svg/triangle-right.svg"></object>
-                    </span>
-                    <span class="overlay-item  circle-sm-right">
-                        <object data="assets/images/svg/banner-circle-sm.svg"></object>
-                    </span>
-                    <span class="overlay-item  circle-lg-right">
-                        <object data="assets/images/svg/banner-circle-lg.svg"></object>
-                    </span>
-                    <div class="overlay-item globe"></div>
+                    <div class="overlay-item left-top circle-lg-center">
+                        <img src="assets/images/svg/banner-circle-lg.svg"/>
+                    </div>
+                    <div class="overlay-item left-top circle-sm-center">
+                        <img src="assets/images/svg/banner-circle-sm.svg"/>
+                    </div>
+
+                    <div class="overlay-item left-bottom triangle-bordered">
+                        <img src="assets/images/svg/triangle-right-bordered.svg"/>
+                        <img src="assets/images/svg/triangle-right-bordered.svg"/>
+                        <img src="assets/images/svg/triangle-right.svg"/>
+                    </div>
+
+                    <div class="overlay-item globe">
+                        <img src="assets/images/svg/globe.svg" />
+                    </div>
+
+                    <div class="overlay-item right-top corner-art">
+                        <img src="assets/images/svg/corner-art.svg"/>
+                    </div>
+
+                    <div class="overlay-item right-bottom circle-sm-right">
+                        <img src="assets/images/svg/banner-circle-sm.svg"/>
+                    </div>
+                    <div class="overlay-item right-bottom circle-lg-right">
+                        <img src="assets/images/svg/banner-circle-lg.svg"/>
+                    </div>
+                    
                 </div>
             </div>
-            
-            <div class="hero-section">
-                <div class="hero-carousel-slider main-hero-banner">
-                    <div class="each-slider-item">
+
+            <!-- Carousel Banner -->
+
+            <div class="banner-section">
+
+                <!-- Main Banner -->
+
+                <div class="main-banner-block">
+                    <div class="each-banner-item">
                         <div class="container">
                             <div class="row">
                                 <div class="carousel-inner-block" >
@@ -166,10 +190,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="each-slider-item">
+                    <div class="each-banner-item">
                         <div class="container">
                             <div class="row">
-                                <div class="carousel-inner-block">
+                                <div class="carousel-inner-block" >
                                     <div class="carousel-text-content">
                                         <h5>GUARANTEED & CERTIFIED</h5>
                                         <h1>Innovations <span class="theme-gradient">You Want,</span> Experience <span class="theme-gradient">You Need in CSmart Vouchers</span></h1>
@@ -184,10 +208,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="each-slider-item">
+                    <div class="each-banner-item">
                         <div class="container">
                             <div class="row">
-                                <div class="carousel-inner-block">
+                                <div class="carousel-inner-block" >
                                     <div class="carousel-text-content">
                                         <h5>GUARANTEED & CERTIFIED</h5>
                                         <h1>Innovations <span class="theme-gradient">You Want,</span> Experience <span class="theme-gradient">You Need in CSmart Vouchers</span></h1>
@@ -202,10 +226,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="each-slider-item">
+                    <div class="each-banner-item">
                         <div class="container">
                             <div class="row">
-                                <div class="carousel-inner-block">
+                                <div class="carousel-inner-block" >
                                     <div class="carousel-text-content">
                                         <h5>GUARANTEED & CERTIFIED</h5>
                                         <h1>Innovations <span class="theme-gradient">You Want,</span> Experience <span class="theme-gradient">You Need in CSmart Vouchers</span></h1>
@@ -220,10 +244,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="each-slider-item">
+                    <div class="each-banner-item">
                         <div class="container">
                             <div class="row">
-                                <div class="carousel-inner-block">
+                                <div class="carousel-inner-block" >
                                     <div class="carousel-text-content">
                                         <h5>GUARANTEED & CERTIFIED</h5>
                                         <h1>Innovations <span class="theme-gradient">You Want,</span> Experience <span class="theme-gradient">You Need in CSmart Vouchers</span></h1>
@@ -238,10 +262,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="each-slider-item">
+                    <div class="each-banner-item">
                         <div class="container">
                             <div class="row">
-                                <div class="carousel-inner-block">
+                                <div class="carousel-inner-block" >
                                     <div class="carousel-text-content">
                                         <h5>GUARANTEED & CERTIFIED</h5>
                                         <h1>Innovations <span class="theme-gradient">You Want,</span> Experience <span class="theme-gradient">You Need in CSmart Vouchers</span></h1>
@@ -256,10 +280,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="each-slider-item">
+                    <div class="each-banner-item">
                         <div class="container">
                             <div class="row">
-                                <div class="carousel-inner-block">
+                                <div class="carousel-inner-block" >
                                     <div class="carousel-text-content">
                                         <h5>GUARANTEED & CERTIFIED</h5>
                                         <h1>Innovations <span class="theme-gradient">You Want,</span> Experience <span class="theme-gradient">You Need in CSmart Vouchers</span></h1>
@@ -274,10 +298,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="each-slider-item">
+                    <div class="each-banner-item">
                         <div class="container">
                             <div class="row">
-                                <div class="carousel-inner-block">
+                                <div class="carousel-inner-block" >
                                     <div class="carousel-text-content">
                                         <h5>GUARANTEED & CERTIFIED</h5>
                                         <h1>Innovations <span class="theme-gradient">You Want,</span> Experience <span class="theme-gradient">You Need in CSmart Vouchers</span></h1>
@@ -293,11 +317,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-card-slider slider-nav">
+
+                <!-- Carousel Card -->
+
+                <div class="carousel-card-block">
                     <div class="item">
                         <div class="carousel-card">
                             <figure>
-                                <object title="overview" data="assets/images/svg/overview.svg"></object>
+                                <img title="overview" src="assets/images/svg/overview.svg"/>
                             </figure>
                             <div class="carousel-card-content">
                                 <h5>Overview</h5>
@@ -308,7 +335,7 @@
                     <div class="item">
                         <div class="carousel-card">
                             <figure>
-                                <object title="5g" data="assets/images/svg/5g.svg"></object>
+                                <img title="5g" src="assets/images/svg/5g.svg"/>
                             </figure>
                             <div class="carousel-card-content">
                                 <h5>5G</h5>
@@ -319,7 +346,7 @@
                     <div class="item">
                         <div class="carousel-card">
                             <figure>
-                                <object title="enterprise" data="assets/images/svg/enterprise.svg"></object>
+                                <img title="enterprise" src="assets/images/svg/enterprise.svg"/>
                             </figure>
                             <div class="carousel-card-content">
                                 <h5>Enterprise</h5>
@@ -330,7 +357,7 @@
                     <div class="item">
                         <div class="carousel-card">
                             <figure>
-                                <object title="satelite" data="assets/images/svg/satelite.svg"></object>
+                                <img title="satelite" src="assets/images/svg/satelite.svg"/>
                             </figure>
                             <div class="carousel-card-content">
                                 <h5>Satellite</h5>
@@ -341,7 +368,7 @@
                     <div class="item">
                         <div class="carousel-card">
                             <figure>
-                                <object title="iot" data="assets/images/svg/iot.svg"></object>
+                                <img title="iot" src="assets/images/svg/iot.svg"/>
                             </figure>
                             <div class="carousel-card-content">
                                 <h5>IoT</h5>
@@ -352,7 +379,7 @@
                     <div class="item">
                         <div class="carousel-card">
                             <figure>
-                                <object title="iot" data="assets/images/svg/iot.svg"></object>
+                                <img title="iot" src="assets/images/svg/iot.svg"/>
                             </figure>
                             <div class="carousel-card-content">
                                 <h5>IoT</h5>
@@ -363,7 +390,7 @@
                     <div class="item">
                         <div class="carousel-card">
                             <figure>
-                                <object title="iot" data="assets/images/svg/iot.svg"></object>
+                                <img title="iot" src="assets/images/svg/iot.svg"/>
                             </figure>
                             <div class="carousel-card-content">
                                 <h5>IoT</h5>
@@ -374,7 +401,7 @@
                     <div class="item">
                         <div class="carousel-card">
                             <figure>
-                                <object title="iot" data="assets/images/svg/iot.svg"></object>
+                                <img title="iot" src="assets/images/svg/iot.svg"/>
                             </figure>
                             <div class="carousel-card-content">
                                 <h5>IoT</h5>
@@ -384,12 +411,16 @@
                     </div>
                 </div>
             </div>
+
+            <!-- <div style="background: palevioletred;height: 240px;width: 100%;position: absolute;left: 0;bottom: -140px;"></div> -->
+
+            
         </section>
 
         <!-- Content Area -->
 
         <article class="article-container line-art">
-            
+
             <!-- Animated bubbles -->
 
             <div class="bubble-box left-top"></div>
@@ -402,7 +433,7 @@
             <section class="content-area p-0" id="client">
                 <div class="container">
                     <div class="row">
-                        <div class="client-section">
+                        <div class="client-section" data-aos="fade-up">
                             <div class="each-item">
                                 <div class="each-client">
                                     <img src="assets/images/clients/tissuegen.svg" alt="tissuegen" />
@@ -467,18 +498,18 @@
                 <div class="container">
                     <div class="row align-items-center">
                             
-                            <div class="section-header text-center" data-aos="fade-up">
+                            <div class="section-header text-center" data-aos="fade-up" data-aos-delay="50">
                                 <h5>EXPLORE WIDE RANGE OF FEATURES</h5>
                                 <h3>OUR <span class="theme-gradient">PRODUCTS</span></h3>
                             </div>
     
-                            <div class="section-content text-center p-side-6" data-aos="fade-up">
+                            <div class="section-content text-center p-side-6" data-aos="fade-up" data-aos-delay="50">
                                 <p>Cloud based storage for your bata backup just login with your mail account from play store and using whatever you want business purpose orem Epsom dummy text. Never miss your change its just began.</p>
                             </div>
                         
                             <div class="product-list">
-                                <div class="row justify-content-lg-center gutter-20">
-                                    <div class="col-lg-2 col-sm-6" data-aos="flip-left">
+                                <div class="row justify-content-lg-center justify-content-sm-center gutter-20">
+                                    <div class="col-lg-2 col-sm-6" data-aos="flip-right" data-aos-delay="50">
                                         <a href="javascript:void(0);">
                                             <div class="product-card">
                                                 <figure>
@@ -488,7 +519,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-lg-2 col-sm-6" data-aos="flip-left">
+                                    <div class="col-lg-2 col-sm-6" data-aos="flip-right" data-aos-delay="100">
                                         <a href="javascript:void(0);">
                                             <div class="product-card">
                                                 <figure>
@@ -498,7 +529,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-lg-2 col-sm-6" data-aos="flip-left">
+                                    <div class="col-lg-2 col-sm-6" data-aos="flip-right" data-aos-delay="150">
                                         <a href="javascript:void(0);">
                                             <div class="product-card">
                                                 <figure>
@@ -508,7 +539,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-lg-2 col-sm-6" data-aos="flip-left">
+                                    <div class="col-lg-2 col-sm-6" data-aos="flip-right" data-aos-delay="200">
                                         <a href="javascript:void(0);">
                                             <div class="product-card">
                                                 <figure>
@@ -518,7 +549,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-lg-2 col-sm-6" data-aos="flip-left">
+                                    <div class="col-lg-2 col-sm-6" data-aos="flip-right" data-aos-delay="250">
                                         <a href="javascript:void(0);">
                                             <div class="product-card">
                                                 <figure>
@@ -528,7 +559,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-lg-2 col-sm-6" data-aos="flip-left">
+                                    <div class="col-lg-2 col-sm-6" data-aos="flip-right" data-aos-delay="300">
                                         <a href="javascript:void(0);">
                                             <div class="product-card">
                                                 <figure>
@@ -538,7 +569,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-lg-2 col-sm-6" data-aos="flip-left">
+                                    <div class="col-lg-2 col-sm-6" data-aos="flip-right" data-aos-delay="350">
                                         <a href="javascript:void(0);">
                                             <div class="product-card">
                                                 <figure>
@@ -548,7 +579,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-lg-2 col-sm-6" data-aos="flip-left">
+                                    <div class="col-lg-2 col-sm-6" data-aos="flip-right" data-aos-delay="400">
                                         <a href="javascript:void(0);">
                                             <div class="product-card">
                                                 <figure>
@@ -558,7 +589,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-lg-2 col-sm-6" data-aos="flip-left">
+                                    <div class="col-lg-2 col-sm-6" data-aos="flip-right" data-aos-delay="450">
                                         <a href="javascript:void(0);">
                                             <div class="product-card">
                                                 <figure>
@@ -568,7 +599,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-lg-2 col-sm-6" data-aos="flip-left">
+                                    <div class="col-lg-2 col-sm-6" data-aos="flip-right" data-aos-delay="500">
                                         <a href="javascript:void(0);">
                                             <div class="product-card">
                                                 <figure>
@@ -578,7 +609,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-lg-2 col-sm-6" data-aos="flip-left">
+                                    <div class="col-lg-2 col-sm-6" data-aos="flip-right" data-aos-delay="550">
                                         <a href="javascript:void(0);">
                                             <div class="product-card">
                                                 <figure>
@@ -588,7 +619,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-lg-2 col-sm-6" data-aos="flip-left">
+                                    <div class="col-lg-2 col-sm-6" data-aos="flip-right" data-aos-delay="600">
                                         <a href="javascript:void(0);">
                                             <div class="product-card">
                                                 <figure>
@@ -598,7 +629,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-lg-2 col-sm-6" data-aos="flip-left">
+                                    <div class="col-lg-2 col-sm-6" data-aos="flip-right" data-aos-delay="650">
                                         <a href="javascript:void(0);">
                                             <div class="product-card">
                                                 <figure>
@@ -608,7 +639,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-lg-2 col-sm-6" data-aos="flip-left">
+                                    <div class="col-lg-2 col-sm-6" data-aos="flip-right" data-aos-delay="700">
                                         <a href="javascript:void(0);">
                                             <div class="product-card">
                                                 <figure>
@@ -618,7 +649,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-lg-2 col-sm-6" data-aos="flip-left">
+                                    <div class="col-lg-2 col-sm-6" data-aos="flip-right" data-aos-delay="750">
                                         <a href="javascript:void(0);">
                                             <div class="product-card">
                                                 <figure>
@@ -628,7 +659,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-lg-2 col-sm-6" data-aos="flip-left">
+                                    <div class="col-lg-2 col-sm-6" data-aos="flip-right" data-aos-delay="800">
                                         <a href="javascript:void(0);">
                                             <div class="product-card">
                                                 <figure>
@@ -638,7 +669,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-lg-2 col-sm-6" data-aos="flip-left">
+                                    <div class="col-lg-2 col-sm-6" data-aos="flip-right" data-aos-delay="850">
                                         <a href="javascript:void(0);">
                                             <div class="product-card">
                                                 <figure>
@@ -648,7 +679,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-lg-2 col-sm-6" data-aos="flip-left">
+                                    <div class="col-lg-2 col-sm-6" data-aos="flip-right" data-aos-delay="900">
                                         <a href="javascript:void(0);">
                                             <div class="product-card">
                                                 <figure>
@@ -658,7 +689,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-lg-2 col-sm-6" data-aos="flip-left">
+                                    <div class="col-lg-2 col-sm-6" data-aos="flip-right" data-aos-delay="950">
                                         <a href="javascript:void(0);">
                                             <div class="product-card">
                                                 <figure>
@@ -668,7 +699,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-lg-2 col-sm-6" data-aos="flip-left">
+                                    <div class="col-lg-2 col-sm-6" data-aos="flip-right" data-aos-delay="1000">
                                         <a href="javascript:void(0);">
                                             <div class="product-card">
                                                 <figure>
@@ -678,7 +709,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-lg-2 col-sm-6" data-aos="flip-left">
+                                    <div class="col-lg-2 col-sm-6" data-aos="flip-right" data-aos-delay="1050">
                                         <a href="javascript:void(0);">
                                             <div class="product-card">
                                                 <figure>
@@ -695,303 +726,317 @@
             </section>
 
         </article>
-        
+
         <article class="article-section line-vector">
 
-             <!-- Animated bubbles -->
+            <!-- Animated bubbles -->
 
-            <div class="bubble-box right-top"></div>
-            <div class="bubble-box left-bottom"></div>
+           <div class="bubble-box right-top"></div>
+           <div class="bubble-box left-bottom"></div>
 
-            <!-- Solution Section -->
+           <!-- Solution Section -->
 
-            <section class="content-area pb-0" id="solution">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-5"  data-aos="fade-right">
-                            <div class="section-header">
-                                <h5>OUR SMART</h5>
-                                <h3>SOLUTIONS</h3>
-                            </div>
-                        </div>
-                        <div class="col-lg-7"  data-aos="fade-left">
-                            <div class="section-content">
-                                <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit es</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row m-70">
-                        <div class="col-lg-6">
-                            <figure class="fill-layer">
-                                <div class="layer-1"  data-aos="fade-up" data-aos-duration="6000">
-                                    <img src="assets/images/svg/solution.svg" alt="solution"/>
-                                </div>
-                                <div class="layer-2"  data-aos="fade-up" data-aos-duration="5000">
-                                    <div class="animation-sm-wrapper">
+           <section class="content-area pb-0" id="solution">
+               <div class="container">
+                   <div class="row">
+                       <div class="col-lg-5" data-aos="fade-right" data-aos-delay="50">
+                           <div class="section-header">
+                               <h5>OUR SMART</h5>
+                               <h3>SOLUTIONS</h3>
+                           </div>
+                       </div>
+                       <div class="col-lg-7" data-aos="fade-left" data-aos-delay="100">
+                           <div class="section-content">
+                               <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit es</p>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="row m-70">
+                       <div class="col-lg-6" data-aos="fade-right" data-aos-delay="50">
+                           <figure class="fill-layer">
+                               <div class="layer-1">
+                                   <img src="assets/images/svg/solution.svg" alt="solution"/>
+                               </div>
+                               <div class="layer-2">
+                                   <div class="animation-sm-wrapper">
+                                       
+                                           <span class="overlay-item left-top circle-sm-left">
+                                               <img src="assets/images/svg/banner-circle-sm.svg"/>
+                                           </span>
+                                           <span class="overlay-item left-top triangle-sm-left">
+                                                <img src="assets/images/svg/banner-triangle-sm.svg"/>
+                                           </span>
+                                           <span class="overlay-item triangle-lg-left">
+                                                <img src="assets/images/svg/banner-triangle-lg.svg"/>
+                                           </span>
+                                           <span class="overlay-item circle-sm-right">
+                                                <img src="assets/images/svg/banner-circle-sm.svg"/>
+                                           </span>
+                                           <span class="overlay-item circle-lg-right">
+                                                <img src="assets/images/svg/banner-circle-lg.svg"/>
+                                           </span>
+                                           <span class="overlay-item triangle-bordered">
+                                                <img src="assets/images/svg/triangle-right-bordered.svg"/>
+                                                <img src="assets/images/svg/triangle-right-bordered.svg"/>
+                                                <img src="assets/images/svg/triangle-right.svg"/>
+                                           </span>
+                                           <span class="overlay-item circle-sm-left-bottom">
+                                                <img src="assets/images/svg/banner-circle-sm.svg"/>
+                                           </span>
                                         
-                                            <span class="circle-sm-left">
-                                                <object data="assets/images/svg/banner-circle-sm.svg"></object>
-                                            </span>
-                                            <span class="triangle-sm-left">
-                                                <object data="assets/images/svg/banner-triangle-sm.svg"></object>
-                                            </span>
-                                            <span class="triangle-lg-left">
-                                                <object data="assets/images/svg/banner-triangle-lg.svg"></object>
-                                            </span>
-                                            <span class="circle-sm-right">
-                                                <object data="assets/images/svg/banner-circle-sm.svg"></object>
-                                            </span>
-                                            <span class="circle-lg-right">
-                                                <object data="assets/images/svg/banner-circle-lg.svg"></object>
-                                            </span>
-                                            <span class="triangle-bordered">
-                                                <object data="assets/images/svg/triangle-right-bordered.svg"></object>
-                                                <object data="assets/images/svg/triangle-right-bordered.svg"></object>
-                                                <object data="assets/images/svg/triangle-right.svg"></object>
-                                            </span>
-                                            <span class="circle-sm-left-bottom">
-                                                <object data="assets/images/svg/banner-circle-sm.svg"></object>
-                                            </span>
-                                        
-                                    </div>
-                                   <div class="cirlce-wrap">
-                                        <div class="outer-circle-wrap">
-                                            <img src="assets/images/svg/left-axis.svg" class="left-top"/>
-                                            <img src="assets/images/svg/dotter-cirlce.svg" class="outer"/>                                            
-                                            <img src="assets/images/svg/right-axis.svg" class="right-bottom"/>
-                                        </div>
-                                        <div class="inner-circle-wrap">
-                                            <img src="assets/images/svg/inner-circle.svg"/>
-                                        </div>
                                    </div>
-                                </div>
-                                <div class="layer-3" data-aos="fade-up" data-aos-duration="53000">
-                                    <img src="assets/images/svg/corner-art.svg" alt="corner-art"/>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="col-lg-6" data-aos="fade-left">
-                            <div class="section-content m-0">
-                                <div class="vertical-section">
-                                    <div class="slider-item">
-                                        <div class="each-item-card">
-                                            <figure>
-                                                <object data="assets/images/svg/5g-small.svg" title="5g"></object>
-                                            </figure>
-                                            <div class="item-card-content">
-                                                <h5 class="theme-gradient">5G Technology</h5>
-                                                <p>Select products to improve your subscription monetization options and engage your customers for a total digital customer experience with our Csmart CX suite</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="slider-item">
-                                        <div class="each-item-card">
-                                            <figure>
-                                                <object data="assets/images/svg/enterprise-small.svg" title="Enterprises"></object>
-                                            </figure>
-                                            <div class="item-card-content">
-                                                <h5 class="theme-gradient">Enterprises</h5>
-                                                <p>See how Csmart’s industry-agnostic enhanced digital experience and an intelligent platform can unleash your business’s revenue potential.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="slider-item">
-                                        <div class="each-item-card">
-                                            <figure>
-                                                <object data="assets/images/svg/iot-small.svg" title="CSmart IoT"></object>
-                                            </figure>
-                                            <div class="item-card-content">
-                                                <h5 class="theme-gradient">CSmart IoT</h5>
-                                                <p>Total digital customer experience with our Csmart CX suite comprising of Csmart CRM, Csmart Care and Csmart MApps</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="slider-item">
-                                        <div class="each-item-card">
-                                            <figure>
-                                                <object data="assets/images/svg/5g-small.svg" title="5g"></object>
-                                            </figure>
-                                            <div class="item-card-content">
-                                                <h5 class="theme-gradient">5G Technology</h5>
-                                                <p>Select products to improve your subscription monetization options and engage your customers for a total digital customer experience with our Csmart CX suite</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="slider-item">
-                                        <div class="each-item-card">
-                                            <figure>
-                                                <object data="assets/images/svg/enterprise-small.svg" title="Enterprises"></object>
-                                            </figure>
-                                            <div class="item-card-content">
-                                                <h5 class="theme-gradient">Enterprises</h5>
-                                                <p>See how Csmart’s industry-agnostic enhanced digital experience and an intelligent platform can unleash your business’s revenue potential.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="slider-item">
-                                        <div class="each-item-card">
-                                            <figure>
-                                                <object data="assets/images/svg/iot-small.svg" title="CSmart IoT"></object>
-                                            </figure>
-                                            <div class="item-card-content">
-                                                <h5 class="theme-gradient">CSmart IoT</h5>
-                                                <p>Total digital customer experience with our Csmart CX suite comprising of Csmart CRM, Csmart Care and Csmart MApps</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                  <div class="cirlce-wrap">
+                                       <div class="outer-circle-wrap">
+                                           <img src="assets/images/svg/left-axis.svg" class="left-axis"/>
+                                           <img src="assets/images/svg/dotter-cirlce.svg" class="outer-round"/>                                            
+                                           <img src="assets/images/svg/right-axis.svg" class="right-axis"/>
+                                       </div>
+                                       <div class="inner-circle-wrap">
+                                           <img src="assets/images/svg/inner-circle.svg"/>
+                                       </div>
+                                  </div>
+                               </div>
+                               <div class="layer-3">
+                                   <img src="assets/images/svg/corner-art.svg" alt="corner-art"/>
+                               </div>
+                           </figure>
+                       </div>
+                       <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+                           <div class="section-content m-0">
+                               <div class="vertical-section">
+                                   <div class="slider-item">
+                                       <div class="each-item-card">
+                                           <figure>
+                                               <object data="assets/images/svg/5g-small.svg" title="5g"></object>
+                                           </figure>
+                                           <div class="item-card-content">
+                                               <h5 class="theme-gradient">5G Technology</h5>
+                                               <p>Select products to improve your subscription monetization options and engage your customers for a total digital customer experience with our Csmart CX suite</p>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="slider-item">
+                                       <div class="each-item-card">
+                                           <figure>
+                                               <object data="assets/images/svg/enterprise-small.svg" title="Enterprises"></object>
+                                           </figure>
+                                           <div class="item-card-content">
+                                               <h5 class="theme-gradient">Enterprises</h5>
+                                               <p>See how Csmart’s industry-agnostic enhanced digital experience and an intelligent platform can unleash your business’s revenue potential.</p>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="slider-item">
+                                       <div class="each-item-card">
+                                           <figure>
+                                               <object data="assets/images/svg/iot-small.svg" title="CSmart IoT"></object>
+                                           </figure>
+                                           <div class="item-card-content">
+                                               <h5 class="theme-gradient">CSmart IoT</h5>
+                                               <p>Total digital customer experience with our Csmart CX suite comprising of Csmart CRM, Csmart Care and Csmart MApps</p>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="slider-item">
+                                       <div class="each-item-card">
+                                           <figure>
+                                               <object data="assets/images/svg/5g-small.svg" title="5g"></object>
+                                           </figure>
+                                           <div class="item-card-content">
+                                               <h5 class="theme-gradient">5G Technology</h5>
+                                               <p>Select products to improve your subscription monetization options and engage your customers for a total digital customer experience with our Csmart CX suite</p>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="slider-item">
+                                       <div class="each-item-card">
+                                           <figure>
+                                               <object data="assets/images/svg/enterprise-small.svg" title="Enterprises"></object>
+                                           </figure>
+                                           <div class="item-card-content">
+                                               <h5 class="theme-gradient">Enterprises</h5>
+                                               <p>See how Csmart’s industry-agnostic enhanced digital experience and an intelligent platform can unleash your business’s revenue potential.</p>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="slider-item">
+                                       <div class="each-item-card">
+                                           <figure>
+                                               <object data="assets/images/svg/iot-small.svg" title="CSmart IoT"></object>
+                                           </figure>
+                                           <div class="item-card-content">
+                                               <h5 class="theme-gradient">CSmart IoT</h5>
+                                               <p>Total digital customer experience with our Csmart CX suite comprising of Csmart CRM, Csmart Care and Csmart MApps</p>
+                                           </div>
+                                       </div>
+                                   </div>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
 
-                    <div class="row align-items-center g-0 m-70 mb-0">
-                        <div class="col-lg-7" data-aos="fade-right">
-                            <div class="boiler-card">
-                                <h5 class="theme-gradient">Interested in Our Solutions?</h5>
-                                <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit es</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-5" data-aos="fade-left">
-                            <div class="section-button-block d-flex justify-content-end">
-                                <button class="action-btn" aria-label="learn more">LEARN MORE</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </article>
+                   <div class="row align-items-center g-0 m-70 mb-0">
+                       <div class="col-lg-7" data-aos="fade-right" data-aos-delay="50">
+                           <div class="boiler-card">
+                               <h5 class="theme-gradient">Interested in Our Solutions?</h5>
+                               <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit es</p>
+                           </div>
+                       </div>
+                       <div class="col-lg-5" data-aos="fade-left" data-aos-delay="100">
+                           <div class="section-button-block d-flex justify-content-end">
+                               <button class="action-btn" aria-label="learn more">LEARN MORE</button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </section>
+       </article>
 
         <article class="article-section service-bg">
 
-             <!-- Animated bubbles -->
+            <!-- Animated bubbles -->
 
-             <div class="bubble-box left-top"></div>
-             <div class="bubble-box right-bottom"></div>
+            <div class="bubble-box left-top"></div>
+            <div class="bubble-box right-bottom"></div>
 
-             <!-- Services Section -->
+            <!-- Services Section -->
 
-             <section class="content-area pb-0" id="services">
+            <section class="content-area pb-0" id="services">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-5" data-aos="fade-right">
+                        <div class="col-lg-5" data-aos="fade-right" data-aos-delay="50">
                             <div class="section-header">
                                 <h5>OUR SERVICES</h5>
                                 <h3>WHAT <span class="theme-gradient">SERVICES</span> <span class="font-light">WE’RE OFFERING</span></h3>
                             </div>
                         </div>
-                        <div class="col-lg-7" data-aos="fade-right">
-                            <div class="section-content">
+                        <div class="col-lg-7">
+                            <div class="section-content" data-aos="fade-left" data-aos-delay="100">
                                 <p>In the dynamic landscape of modern service providers, managing resource inventory has evolved into a complex and labour-intensive daily task for business teams. The advent of 5G technology has exponentially increased the demand for provisioning a multitude of devices onto networks.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="row align-items-center m-70">
-                        <div class="each-service-card" data-aos="fade-left">
-                            <div class="service-card-left">
-                                <figure>
-                                    <img src="assets/images/svg/cpu.svg" alt="cpu"/>
-                                </figure>
-                                <h5>Service name here</h5>
-                            </div>
-                            <div class="service-card-center">
-                                <figure>
-                                    <img src="assets/images/svg/robot.svg" alt="robot" />
-                                </figure>
-                            </div>
-                            <div class="service-card-right">
-                                <p>See how Csmart’s industry-agnostic enhanced digital experience and an intelligent platform can unleash your business’s revenue potential. </p>
-                                <button class="arrow" aria-label="arrow"></button>
-                            </div>
-                        </div>
-                        <div class="each-service-card" data-aos="fade-left">
-                            <div class="service-card-left">
-                                <figure>
-                                    <img src="assets/images/svg/database.svg" alt="database"/>
-                                </figure>
-                                <h5>Service name here</h5>
-                            </div>
-                            <div class="service-card-center">
-                                <figure>
-                                    <img src="assets/images/svg/robot.svg" alt="robot" />
-                                </figure>
-                            </div>
-                            <div class="service-card-right">
-                                <p>See how Csmart’s industry-agnostic enhanced digital experience and an intelligent platform can unleash your business’s revenue potential. </p>
-                                <button class="arrow" aria-label="arrow"></button>
+
+                    <div class="m-70">
+                        <div class="row align-items-center" data-aos="fade-right" data-aos-delay="50">
+                            <div class="each-service-card">
+                                <div class="service-card-left">
+                                    <figure>
+                                        <img src="assets/images/svg/cpu.svg" alt="cpu"/>
+                                    </figure>
+                                    <h5>Service name here</h5>
+                                </div>
+                                <div class="service-card-center">
+                                    <figure>
+                                        <img src="assets/images/svg/robot.svg" alt="robot" />
+                                    </figure>
+                                </div>
+                                <div class="service-card-right">
+                                    <p>See how Csmart’s industry-agnostic enhanced digital experience and an intelligent platform can unleash your business’s revenue potential. </p>
+                                    <button class="arrow" aria-label="arrow"></button>
+                                </div>
                             </div>
                         </div>
-                        <div class="each-service-card" data-aos="fade-left">
-                            <div class="service-card-left">
-                                <figure>
-                                    <img src="assets/images/svg/devices.svg" alt="devices"/>
-                                </figure>
-                                <h5>Service name here</h5>
-                            </div>
-                            <div class="service-card-center">
-                                <figure>
-                                    <img src="assets/images/svg/robot.svg" alt="robot" />
-                                </figure>
-                            </div>
-                            <div class="service-card-right">
-                                <p>See how Csmart’s industry-agnostic enhanced digital experience and an intelligent platform can unleash your business’s revenue potential. </p>
-                                 <button class="arrow" aria-label="arrow"></button>
-                            </div>
-                        </div>
-                        <div class="each-service-card" data-aos="fade-left">
-                            <div class="service-card-left">
-                                <figure>
-                                    <img src="assets/images/svg/electronic.svg" alt="electronic"/>
-                                </figure>
-                                <h5>Service name here</h5>
-                            </div>
-                            <div class="service-card-center">
-                                <figure>
-                                    <img src="assets/images/svg/robot.svg" alt="robot" />
-                                </figure>
-                            </div>
-                            <div class="service-card-right">
-                                <p>See how Csmart’s industry-agnostic enhanced digital experience and an intelligent platform can unleash your business’s revenue potential. </p>
-                                 <button class="arrow" aria-label="arrow"></button>
+                        <div class="row align-items-center" data-aos="fade-right" data-aos-delay="50">
+                            <div class="each-service-card">
+                                <div class="service-card-left">
+                                    <figure>
+                                        <img src="assets/images/svg/database.svg" alt="database"/>
+                                    </figure>
+                                    <h5>Service name here</h5>
+                                </div>
+                                <div class="service-card-center">
+                                    <figure>
+                                        <img src="assets/images/svg/robot.svg" alt="robot" />
+                                    </figure>
+                                </div>
+                                <div class="service-card-right">
+                                    <p>See how Csmart’s industry-agnostic enhanced digital experience and an intelligent platform can unleash your business’s revenue potential. </p>
+                                    <button class="arrow" aria-label="arrow"></button>
+                                </div>
                             </div>
                         </div>
-                        <div class="each-service-card" data-aos="fade-left">
-                            <div class="service-card-left">
-                                <figure>
-                                    <img src="assets/images/svg/chip.svg" alt="chip"/>
-                                </figure>
-                                <h5>Service name here</h5>
-                            </div>
-                            <div class="service-card-center">
-                                <figure>
-                                    <img src="assets/images/svg/robot.svg" alt="robot" />
-                                </figure>
-                            </div>
-                            <div class="service-card-right">
-                                <p>See how Csmart’s industry-agnostic enhanced digital experience and an intelligent platform can unleash your business’s revenue potential. </p>
-                                 <button class="arrow" aria-label="arrow"></button>
-                            </div>
-                        </div>
-                        <div class="each-service-card" data-aos="fade-left">
-                            <div class="service-card-left">
-                                <figure>
-                                    <img src="assets/images/svg/robo.svg" alt="robo"/>
-                                </figure>
-                                <h5>Service name here</h5>
-                            </div>
-                            <div class="service-card-center">
-                                <figure>
-                                    <img src="assets/images/svg/robot.svg" alt="robot" />
-                                </figure>
-                            </div>
-                            <div class="service-card-right">
-                                <p>See how Csmart’s industry-agnostic enhanced digital experience and an intelligent platform can unleash your business’s revenue potential. </p>
-                                 <button class="arrow" aria-label="arrow"></button>
+                        <div class="row align-items-center" data-aos="fade-right" data-aos-delay="50">
+                            <div class="each-service-card">
+                                <div class="service-card-left">
+                                    <figure>
+                                        <img src="assets/images/svg/devices.svg" alt="devices"/>
+                                    </figure>
+                                    <h5>Service name here</h5>
+                                </div>
+                                <div class="service-card-center">
+                                    <figure>
+                                        <img src="assets/images/svg/robot.svg" alt="robot" />
+                                    </figure>
+                                </div>
+                                <div class="service-card-right">
+                                    <p>See how Csmart’s industry-agnostic enhanced digital experience and an intelligent platform can unleash your business’s revenue potential. </p>
+                                     <button class="arrow" aria-label="arrow"></button>
+                                </div>
                             </div>
                         </div>
+                        <div class="row align-items-center" data-aos="fade-right" data-aos-delay="50">
+                            <div class="each-service-card">
+                                <div class="service-card-left">
+                                    <figure>
+                                        <img src="assets/images/svg/electronic.svg" alt="electronic"/>
+                                    </figure>
+                                    <h5>Service name here</h5>
+                                </div>
+                                <div class="service-card-center">
+                                    <figure>
+                                        <img src="assets/images/svg/robot.svg" alt="robot" />
+                                    </figure>
+                                </div>
+                                <div class="service-card-right">
+                                    <p>See how Csmart’s industry-agnostic enhanced digital experience and an intelligent platform can unleash your business’s revenue potential. </p>
+                                     <button class="arrow" aria-label="arrow"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center" data-aos="fade-right" data-aos-delay="50">
+                            <div class="each-service-card">
+                                <div class="service-card-left">
+                                    <figure>
+                                        <img src="assets/images/svg/chip.svg" alt="chip"/>
+                                    </figure>
+                                    <h5>Service name here</h5>
+                                </div>
+                                <div class="service-card-center">
+                                    <figure>
+                                        <img src="assets/images/svg/robot.svg" alt="robot" />
+                                    </figure>
+                                </div>
+                                <div class="service-card-right">
+                                    <p>See how Csmart’s industry-agnostic enhanced digital experience and an intelligent platform can unleash your business’s revenue potential. </p>
+                                     <button class="arrow" aria-label="arrow"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center" data-aos="fade-right" data-aos-delay="50">
+                            <div class="each-service-card">
+                                <div class="service-card-left">
+                                    <figure>
+                                        <img src="assets/images/svg/robo.svg" alt="robo"/>
+                                    </figure>
+                                    <h5>Service name here</h5>
+                                </div>
+                                <div class="service-card-center">
+                                    <figure>
+                                        <img src="assets/images/svg/robot.svg" alt="robot" />
+                                    </figure>
+                                </div>
+                                <div class="service-card-right">
+                                    <p>See how Csmart’s industry-agnostic enhanced digital experience and an intelligent platform can unleash your business’s revenue potential. </p>
+                                     <button class="arrow" aria-label="arrow"></button>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
-             </section>
+            </section>
         </article>
 
         <article class="article-section testimonial-bg">
@@ -1006,22 +1051,22 @@
             <section class="content-area pb-0" id="services">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-5" data-aos="fade-right">
+                        <div class="col-lg-5" data-aos="fade-right" data-aos-delay="50">
                             <div class="section-header">
                                 <h5>TESTIMONIALS</h5>
                                 <h3>WHAT PEOPLE <span class="theme-gradient">SAYS</span> ABOUT US</h3>
                             </div>
                         </div>
                         <div class="col-lg-2"></div>
-                        <div class="col-lg-5" data-aos="fade-left">
+                        <div class="col-lg-5" data-aos="fade-left" data-aos-delay="100">
                             <div class="section-content">
                                 <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row align-items-center m-70">
-                        <div class="testimonial-section" data-aos="fade-up">
+                    <div class="row align-items-center m-70" data-aos="fade-up" data-aos-delay="50">
+                        <div class="testimonial-section">
                             <div class="each-testimonial-block">
                                 <div class="each-testimonial-card">
                                     <figure>
@@ -1108,9 +1153,11 @@
                             </div>
                         </div>
                     </div>
-                    
+
+
                 </div>
             </section>
+
         </article>
 
         <article class="article-section line-art">
@@ -1124,8 +1171,8 @@
 
             <section class="content-area pb-0" id="gallery">
                 <div class="container">
-                    <div class="row align-items-center">                            
-                        <div class="section-header text-center" data-aos="fade-up">
+                    <div class="row align-items-center" data-aos="fade-up" data-aos-delay="50">                            
+                        <div class="section-header text-center">
                             <h5 class="theme-gradient">EXPLORE OUR PORTFOLIO</h5>
                             <h3>PRODUCT GALLERY</h3>
                         </div>
@@ -1133,7 +1180,7 @@
 
                     <div class="row align-items-center">
                         <div class="gallery-section">
-                            <ul class="gallery-filter-control" data-aos="fade-up">
+                            <ul class="gallery-filter-control" data-aos="fade-up" data-aos-delay="50">
                                 <li class="gallery-filter active" id="all">All</li>
                                 <li class="gallery-filter" id="CSmartCRM">CSmart CRM</li>
                                 <li class="gallery-filter" id="CSmartCX">CSmart CX</li>
@@ -1143,7 +1190,7 @@
                             </ul>
                             <div class="gallery-grid">
                                 <div class="row gutter-30">
-                                    <div class="each-grid-container col-lg-4 col-sm-6 CSmartCRM" data-aos="flip-right">
+                                    <div class="each-grid-container col-lg-4 col-sm-6 CSmartCRM" data-aos="flip-right" data-aos-delay="50">
                                         <div class="each-grid-item">
                                             <figure>
                                                 <img src="assets/images/gallery-1.webp" alt="gallery" />
@@ -1155,7 +1202,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="each-grid-container col-lg-4 col-sm-6 CSmartCDM" data-aos="flip-right">
+                                    <div class="each-grid-container col-lg-4 col-sm-6 CSmartCDM" data-aos="flip-right" data-aos-delay="100">
                                         <div class="each-grid-item">
                                             <figure>
                                                 <img src="assets/images/gallery-2.webp" alt="gallery"/>
@@ -1167,7 +1214,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class=" each-grid-container col-lg-4 col-sm-6 CSmartCRM" data-aos="flip-right">
+                                    <div class=" each-grid-container col-lg-4 col-sm-6 CSmartCRM" data-aos="flip-right" data-aos-delay="150">
                                         <div class="each-grid-item">
                                             <figure>
                                                 <img src="assets/images/gallery-3.webp" alt="gallery"/>
@@ -1179,7 +1226,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="each-grid-container col-lg-4 col-sm-6 CSmartCDM" data-aos="flip-right">
+                                    <div class="each-grid-container col-lg-4 col-sm-6 CSmartCDM" data-aos="flip-right" data-aos-delay="200">
                                         <div class="each-grid-item">
                                             <figure>
                                                 <img src="assets/images/gallery-4.webp" alt="gallery"/>
@@ -1191,7 +1238,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="each-grid-container col-lg-4 col-sm-6 CSmartCare" data-aos="flip-right">
+                                    <div class="each-grid-container col-lg-4 col-sm-6 CSmartCare" data-aos="flip-right" data-aos-delay="250">
                                         <div class="each-grid-item">
                                             <figure>
                                                 <img src="assets/images/gallery-5.webp" alt="gallery"/>
@@ -1203,7 +1250,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="each-grid-container col-lg-4 col-sm-6 CSmartCX CSmartMobileApps" data-aos="flip-right">
+                                    <div class="each-grid-container col-lg-4 col-sm-6 CSmartCX CSmartMobileApps" data-aos="flip-right" data-aos-delay="300">
                                         <div class="each-grid-item">
                                             <figure>
                                                 <img src="assets/images/gallery-6.webp" alt="gallery"/>
@@ -1222,19 +1269,19 @@
                     </div>
 
                     <div class="row align-items-center g-0 m-70 mb-0">
-                        <div class="col-lg-7" data-aos="fade-right">
+                        <div class="col-lg-7" data-aos="fade-right" data-aos-delay="50">
                             <div class="boiler-card">
                                 <h5 class="theme-gradient">Interested in Our Solutions?</h5>
                                 <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit es</p>
                             </div>
                         </div>
-                        <div class="col-lg-5" data-aos="fade-left">
+                        <div class="col-lg-5" data-aos="fade-left" data-aos-delay="100">
                             <div class="section-button-block d-flex justify-content-end">
                                 <button class="action-btn" aria-label="learn more">LEARN MORE</button>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </section>
         </article>
@@ -1437,6 +1484,7 @@
             </div>
         </footer>
 
+
     </div>
 
     
@@ -1445,7 +1493,7 @@
     <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/carousel.js"></script>
     <script type="text/javascript" src="assets/js/slick.js"></script>
-    <script type="text/javascript" src="assets/js/aos.js"></script>    
+    <script type="text/javascript" src="assets/js/aos.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
 
 </body>
